@@ -6,7 +6,7 @@
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-white/10;
   }
   
   body {
@@ -31,6 +31,10 @@
   
   .glass-blue {
     @apply bg-saint-blue-500/10 backdrop-blur-xl border border-saint-blue-500/20;
+  }
+  
+  .glass-green {
+    @apply bg-green-500/10 backdrop-blur-xl border border-green-500/20;
   }
   
   /* HACP™ Protocol Indicator */
@@ -94,6 +98,29 @@
   
   .animate-slide-up {
     animation: slideUp 0.8s ease-out;
+  }
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
